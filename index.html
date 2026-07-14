@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
   <title>EcuBodGet - Financiamiento Personal</title>
+=======
+  <title>FinTrack - Sistema Financiero Personal</title>
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -67,6 +71,7 @@
       padding: 44px 16px 20px 16px;
       overflow-y: auto;
       max-height: 800px;
+<<<<<<< HEAD
       display: none;
     }
 
@@ -193,6 +198,10 @@
     .auth-back:hover { color: var(--text-secondary); }
 
     /* DASHBOARD */
+=======
+    }
+
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
     .header {
       text-align: center;
       margin-bottom: 24px;
@@ -399,7 +408,11 @@
     }
 
     .btn-primary {
+<<<<<<< HEAD
       background: linear-gradient(135deg, var(--accent), var(--accent-light));
+=======
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       color: #fff;
     }
 
@@ -449,7 +462,11 @@
 
     .nav-label { font-size: 10px; margin-top: 3px; color: var(--text-tertiary); }
 
+<<<<<<< HEAD
     /* Modals */
+=======
+    /* Modal */
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
     .modal-overlay {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -508,6 +525,10 @@
     }
 
     .form-input:focus, .form-select:focus { border-color: var(--accent); }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
     .form-input::placeholder { color: var(--text-quaternary); }
 
     .modal-actions { display: flex; gap: 10px; margin-top: 20px; }
@@ -540,6 +561,7 @@
 
     .btn-save:hover { background: var(--accent-light); }
 
+<<<<<<< HEAD
     .btn-danger {
       flex: 1;
       padding: 12px;
@@ -555,6 +577,8 @@
 
     .btn-danger:hover { background: #dc2626; }
 
+=======
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
     /* Transaction List */
     .transaction-item {
       display: flex;
@@ -600,6 +624,7 @@
 
     .transaction-item:hover .delete-btn { opacity: 1; }
 
+<<<<<<< HEAD
     /* Settings */
     .setting-item {
       display: flex;
@@ -627,10 +652,23 @@
       border: 1px solid var(--border);
       border-radius: 8px;
       color: var(--text-primary);
+=======
+    /* Tabs */
+    .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+
+    .tab {
+      flex: 1;
+      padding: 10px;
+      background: var(--surface-muted);
+      border: none;
+      border-radius: 10px;
+      color: var(--text-secondary);
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       font-size: 13px;
       font-weight: 500;
       cursor: pointer;
       font-family: 'Inter', sans-serif;
+<<<<<<< HEAD
     }
 
     .setting-btn:hover { background: var(--border); }
@@ -712,6 +750,29 @@
     }
 
     .toggle.active::after { transform: translateX(20px); }
+=======
+      transition: all 0.2s;
+    }
+
+    .tab.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Empty state */
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-tertiary);
+    }
+
+    .empty-state-icon { font-size: 48px; margin-bottom: 12px; }
+
+    .empty-state-text { font-size: 14px; }
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
 
     .screen::-webkit-scrollbar { width: 4px; }
     .screen::-webkit-scrollbar-track { background: transparent; }
@@ -761,6 +822,7 @@
       opacity: 1;
       transform: translateX(-50%) translateY(0);
     }
+<<<<<<< HEAD
 
     .user-badge {
       display: flex;
@@ -805,11 +867,14 @@
     .empty-state-icon { font-size: 48px; margin-bottom: 12px; }
 
     .empty-state-text { font-size: 14px; }
+=======
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
   </style>
 </head>
 <body>
   <div class="phone-frame">
     <div class="notch"></div>
+<<<<<<< HEAD
 
     <!-- LOGIN SCREEN -->
     <div class="screen active auth-screen" id="loginScreen">
@@ -987,6 +1052,20 @@
         </div>
       </div>
 
+=======
+    <div class="screen" id="mainScreen">
+      <!-- Header / Balance -->
+      <div class="header">
+        <div class="header-label">Balance total</div>
+        <div class="balance" id="balanceDisplay">$2,847.50</div>
+        <div class="balance-change">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+          <span id="monthChange">+ $340.00 este mes</span>
+        </div>
+      </div>
+
+      <!-- Income vs Expenses -->
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       <div class="card">
         <div class="card-title">
           Ingresos vs Gastos
@@ -996,11 +1075,26 @@
           <svg width="100%" height="150" viewBox="0 0 380 150" id="barChart"></svg>
         </div>
         <div class="chart-legend">
+<<<<<<< HEAD
           <div class="legend-item"><div class="legend-dot" style="background: var(--positive);"></div><span>Ingreso</span></div>
           <div class="legend-item"><div class="legend-dot" style="background: var(--danger);"></div><span>Gasto</span></div>
         </div>
       </div>
 
+=======
+          <div class="legend-item">
+            <div class="legend-dot" style="background: var(--positive);"></div>
+            <span>Ingreso</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background: var(--danger);"></div>
+            <span>Gasto</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spending by Category -->
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       <div class="card">
         <div class="card-title">Gastos por categoría</div>
         <div class="donut-wrapper">
@@ -1009,30 +1103,56 @@
         </div>
       </div>
 
+<<<<<<< HEAD
+=======
+      <!-- Savings Goals -->
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       <div class="card">
         <div class="card-title">Metas de ahorro</div>
         <div id="goalsList"></div>
       </div>
 
+<<<<<<< HEAD
+=======
+      <!-- Alerts & Insights -->
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       <div class="card">
         <div class="card-title">Alertas e insights</div>
         <div id="alertsList"></div>
       </div>
 
+<<<<<<< HEAD
       <div class="card">
         <div class="card-title">Recordatorios financieros<span class="card-subtitle" id="reminderMonth">Julio 2026</span></div>
         <div id="remindersList"></div>
       </div>
 
+=======
+      <!-- Reminders -->
+      <div class="card">
+        <div class="card-title">
+          Recordatorios financieros
+          <span class="card-subtitle" id="reminderMonth">Julio 2026</span>
+        </div>
+        <div id="remindersList"></div>
+      </div>
+
+      <!-- Quick Actions -->
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       <div class="actions-row">
         <button class="btn btn-primary" onclick="openModal('expense')">+ Nuevo gasto</button>
         <button class="btn btn-secondary" onclick="openModal('income')">+ Nuevo ingreso</button>
       </div>
 
+<<<<<<< HEAD
+=======
+      <!-- Recent Transactions -->
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       <div class="card">
         <div class="card-title">Transacciones recientes</div>
         <div id="transactionsList"></div>
       </div>
+<<<<<<< HEAD
     </div>
 
     <!-- GROWTH SCREEN -->
@@ -1238,6 +1358,48 @@
   <div class="modal-overlay" id="txModalOverlay">
     <div class="modal">
       <div class="modal-title" id="txModalTitle">Nuevo gasto</div>
+=======
+
+      <!-- Bottom Nav -->
+      <div class="bottom-nav">
+        <div class="nav-item active" onclick="switchTab('analysis')">
+          <svg class="nav-icon" viewBox="0 0 24 24">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+          <div class="nav-label">Análisis</div>
+        </div>
+        <div class="nav-item" onclick="switchTab('growth')">
+          <svg class="nav-icon" viewBox="0 0 24 24">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            <polyline points="17 6 23 6 23 12"/>
+          </svg>
+          <div class="nav-label">Crecimiento</div>
+        </div>
+        <div class="nav-item" onclick="switchTab('security')">
+          <svg class="nav-icon" viewBox="0 0 24 24">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+          <div class="nav-label">Seguridad</div>
+        </div>
+        <div class="nav-item" onclick="switchTab('settings')">
+          <svg class="nav-icon" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+          </svg>
+          <div class="nav-label">Ajustes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-title" id="modalTitle">Nuevo gasto</div>
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       <div class="form-group">
         <label class="form-label">Descripción</label>
         <input type="text" class="form-input" id="txDesc" placeholder="Ej: Supermercado, Alquiler...">
@@ -1264,12 +1426,17 @@
         <input type="date" class="form-input" id="txDate">
       </div>
       <div class="modal-actions">
+<<<<<<< HEAD
         <button class="btn-cancel" onclick="closeTxModal()">Cancelar</button>
+=======
+        <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
         <button class="btn-save" onclick="saveTransaction()">Guardar</button>
       </div>
     </div>
   </div>
 
+<<<<<<< HEAD
   <!-- Goal Modal -->
   <div class="modal-overlay" id="goalModalOverlay">
     <div class="modal">
@@ -1515,6 +1682,48 @@
       if (securityLog.length > 20) securityLog = securityLog.slice(0, 20);
       localStorage.setItem(getUserKey('securityLog'), JSON.stringify(securityLog));
     }
+=======
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ===== DATA =====
+    let transactions = JSON.parse(localStorage.getItem('fintrack_transactions')) || [
+      { id: 1, type: 'income', desc: 'Salario', amount: 1800, date: '2026-07-01', category: 'Salario' },
+      { id: 2, type: 'expense', desc: 'Alquiler', amount: 350, date: '2026-07-01', category: 'Alquiler' },
+      { id: 3, type: 'expense', desc: 'Supermercado', amount: 120, date: '2026-07-05', category: 'Comida' },
+      { id: 4, type: 'expense', desc: 'Gasolina', amount: 60, date: '2026-07-08', category: 'Transporte' },
+      { id: 5, type: 'income', desc: 'Freelance', amount: 400, date: '2026-07-10', category: 'Freelance' },
+      { id: 6, type: 'expense', desc: 'Netflix + Spotify', amount: 25, date: '2026-07-12', category: 'Entretenimiento' },
+      { id: 7, type: 'expense', desc: 'Luz y agua', amount: 90, date: '2026-07-12', category: 'Servicios' },
+      { id: 8, type: 'expense', desc: 'Uber', amount: 15, date: '2026-07-12', category: 'Transporte' },
+      { id: 9, type: 'expense', desc: 'Restaurante', amount: 45, date: '2026-07-12', category: 'Comida' },
+      { id: 10, type: 'expense', desc: 'Cine', amount: 15, date: '2026-07-12', category: 'Entretenimiento' },
+    ];
+
+    let goals = JSON.parse(localStorage.getItem('fintrack_goals')) || [
+      { id: 1, name: 'Fondo de emergencia', target: 3000, current: 3000, color: 'var(--positive)' },
+      { id: 2, name: 'Nueva laptop', target: 1200, current: 840, color: 'var(--chart-1)' },
+      { id: 3, name: 'Viaje a Cusco', target: 1500, current: 450, color: 'var(--chart-4)' },
+      { id: 4, name: 'Inversión ETF', target: 2000, current: 400, color: 'var(--chart-3)' },
+    ];
+
+    let reminders = JSON.parse(localStorage.getItem('fintrack_reminders')) || [
+      { id: 1, title: 'Pago tarjeta de crédito', amount: 180, date: '2026-07-15', time: '18:00' },
+      { id: 2, title: 'Transferencia a fondo de inversión', amount: 200, date: '2026-07-20', time: '09:00' },
+      { id: 3, title: 'Pago de alquiler', amount: 350, date: '2026-08-01', time: '08:00' },
+    ];
+
+    let currentModalType = '';
+    let nextId = Math.max(...transactions.map(t => t.id), 0) + 1;
+
+    // ===== INIT =====
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('txDate').valueAsDate = new Date();
+      renderAll();
+      checkReminders();
+      setInterval(checkReminders, 60000); // Check every minute
+    });
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
 
     // ===== RENDER ALL =====
     function renderAll() {
@@ -1525,10 +1734,13 @@
       renderAlerts();
       renderReminders();
       renderTransactions();
+<<<<<<< HEAD
       renderGrowth();
       renderSecurityLog();
       renderSettingsGoals();
       renderSettingsReminders();
+=======
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
     }
 
     // ===== BALANCE =====
@@ -1536,8 +1748,14 @@
       const income = transactions.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
       const expense = transactions.filter(t => t.type === 'expense').reduce((s, t) => s + t.amount, 0);
       const balance = income - expense;
+<<<<<<< HEAD
       document.getElementById('balanceDisplay').textContent = '$' + balance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
       document.getElementById('monthChange').textContent = (balance >= 0 ? '+ ' : '- ') + '$' + Math.abs(balance).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' este mes';
+=======
+      const change = income - expense;
+      document.getElementById('balanceDisplay').textContent = '$' + balance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      document.getElementById('monthChange').textContent = (change >= 0 ? '+ ' : '- ') + '$' + Math.abs(change).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' este mes';
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
     }
 
     // ===== BAR CHART =====
@@ -1547,6 +1765,7 @@
       const data = [];
       for (let i = 3; i >= 0; i--) {
         const m = (currentMonth - i + 12) % 12;
+<<<<<<< HEAD
         const year = new Date().getFullYear() - (currentMonth - i < 0 ? 1 : 0);
         const monthIncome = transactions.filter(t => {
           const d = new Date(t.date);
@@ -1555,11 +1774,24 @@
         const monthExpense = transactions.filter(t => {
           const d = new Date(t.date);
           return t.type === 'expense' && d.getMonth() === m && d.getFullYear() === year;
+=======
+        const monthIncome = transactions.filter(t => {
+          const d = new Date(t.date);
+          return t.type === 'income' && d.getMonth() === m;
+        }).reduce((s, t) => s + t.amount, 0);
+        const monthExpense = transactions.filter(t => {
+          const d = new Date(t.date);
+          return t.type === 'expense' && d.getMonth() === m;
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
         }).reduce((s, t) => s + t.amount, 0);
         data.push({ month: months[m], income: monthIncome, expense: monthExpense });
       }
 
       const maxVal = Math.max(...data.map(d => Math.max(d.income, d.expense)), 1);
+<<<<<<< HEAD
+=======
+      const svgH = 150;
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       const chartH = 100;
       const barW = 26;
       const gap = 12;
@@ -1567,6 +1799,10 @@
       const baseY = 110;
 
       let svg = '';
+<<<<<<< HEAD
+=======
+      // Grid
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       svg += `<line x1="40" y1="15" x2="370" y2="15" stroke="var(--border)" stroke-width="0.5"/>`;
       svg += `<line x1="40" y1="55" x2="370" y2="55" stroke="var(--border)" stroke-width="0.5"/>`;
       svg += `<line x1="40" y1="95" x2="370" y2="95" stroke="var(--border)" stroke-width="0.5"/>`;
@@ -1594,9 +1830,20 @@
       });
 
       const catColors = {
+<<<<<<< HEAD
         'Alquiler': 'var(--chart-1)', 'Comida': 'var(--chart-2)', 'Transporte': 'var(--chart-3)',
         'Servicios': 'var(--chart-4)', 'Entretenimiento': 'var(--chart-5)',
         'Salud': '#f97316', 'Educación': '#06b6d4', 'Otros': '#8b5cf6'
+=======
+        'Alquiler': 'var(--chart-1)',
+        'Comida': 'var(--chart-2)',
+        'Transporte': 'var(--chart-3)',
+        'Servicios': 'var(--chart-4)',
+        'Entretenimiento': 'var(--chart-5)',
+        'Salud': '#f97316',
+        'Educación': '#06b6d4',
+        'Otros': '#8b5cf6'
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       };
 
       const total = Object.values(cats).reduce((s, v) => s + v, 0);
@@ -1613,11 +1860,26 @@
 
       svg += `<text x="65" y="61" text-anchor="middle" font-size="18" font-weight="700" fill="var(--text-primary)" font-family="Inter">$${Math.round(total)}</text>`;
       svg += `<text x="65" y="77" text-anchor="middle" font-size="10" fill="var(--text-tertiary)" font-family="Inter">este mes</text>`;
+<<<<<<< HEAD
       document.getElementById('donutChart').innerHTML = svg;
 
       let listHtml = '';
       entries.forEach(([cat, amount]) => {
         listHtml += `<div class="category-item"><div class="category-dot" style="background: ${catColors[cat] || 'var(--text-quaternary)'};"></div><span class="category-name">${cat}</span><span class="category-value">$${amount}</span></div>`;
+=======
+
+      document.getElementById('donutChart').innerHTML = svg;
+
+      // Category list
+      let listHtml = '';
+      entries.forEach(([cat, amount]) => {
+        listHtml += `
+          <div class="category-item">
+            <div class="category-dot" style="background: ${catColors[cat] || 'var(--text-quaternary)'};"></div>
+            <span class="category-name">${cat}</span>
+            <span class="category-value">$${amount}</span>
+          </div>`;
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       });
       document.getElementById('categoryList').innerHTML = listHtml;
     }
@@ -1627,7 +1889,20 @@
       let html = '';
       goals.forEach(g => {
         const pct = Math.round((g.current / g.target) * 100);
+<<<<<<< HEAD
         html += `<div class="goal-item"><div class="goal-header"><span class="goal-name">${g.name}</span><span class="goal-percent" style="color: ${g.color};">${pct}%</span></div><div class="progress-track"><div class="progress-fill" style="width: ${Math.min(pct, 100)}%; background: ${g.color};"></div></div></div>`;
+=======
+        html += `
+          <div class="goal-item">
+            <div class="goal-header">
+              <span class="goal-name">${g.name}</span>
+              <span class="goal-percent" style="color: ${g.color};">${pct}%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" style="width: ${Math.min(pct, 100)}%; background: ${g.color};"></div>
+            </div>
+          </div>`;
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       });
       document.getElementById('goalsList').innerHTML = html;
     }
@@ -1637,6 +1912,7 @@
       const foodTotal = transactions.filter(t => t.type === 'expense' && t.category === 'Comida').reduce((s, t) => s + t.amount, 0);
       const entTotal = transactions.filter(t => t.type === 'expense' && t.category === 'Entretenimiento').reduce((s, t) => s + t.amount, 0);
       const travelGoal = goals.find(g => g.name.includes('Viaje'));
+<<<<<<< HEAD
       let html = '';
 
       if (foodTotal > 200) {
@@ -1648,22 +1924,89 @@
       if (html === '') {
         html = `<div class="empty-state"><div class="empty-state-icon">✅</div><div class="empty-state-text">Tus finanzas van bien. Sin alertas por ahora.</div></div>`;
       }
+=======
+
+      let html = '';
+
+      if (foodTotal > 200) {
+        html += `
+          <div class="alert-item alert-warning">
+            <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="var(--warning)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+            <div>
+              <div class="alert-title" style="color: var(--warning);">Gasto alto en comida</div>
+              <div class="alert-desc">Llevas $${foodTotal} este mes. Sugerencia: cocinar 2 días más por semana ahorraría ~$60.</div>
+            </div>
+          </div>`;
+      }
+
+      if (travelGoal && entTotal > 30) {
+        html += `
+          <div class="alert-item alert-success">
+            <svg class="alert-icon" viewBox="0 0 24 24" fill="none" stroke="var(--positive)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            <div>
+              <div class="alert-title" style="color: var(--positive);">Meta de ahorro alcanzable</div>
+              <div class="alert-desc">Si reduces entretenimiento en $20/mes, completarías tu fondo de viaje 2 meses antes.</div>
+            </div>
+          </div>`;
+      }
+
+      if (html === '') {
+        html = `
+          <div class="empty-state">
+            <div class="empty-state-icon">✅</div>
+            <div class="empty-state-text">Tus finanzas van bien. Sin alertas por ahora.</div>
+          </div>`;
+      }
+
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       document.getElementById('alertsList').innerHTML = html;
     }
 
     // ===== REMINDERS =====
     function renderReminders() {
+<<<<<<< HEAD
       const today = new Date(); today.setHours(0,0,0,0);
       let html = '';
       reminders.sort((a, b) => new Date(a.date) - new Date(b.date)).forEach(r => {
         const rDate = new Date(r.date); rDate.setHours(0,0,0,0);
+=======
+      const today = new Date();
+      today.setHours(0,0,0,0);
+
+      let html = '';
+      reminders.sort((a, b) => new Date(a.date) - new Date(b.date)).forEach(r => {
+        const rDate = new Date(r.date);
+        rDate.setHours(0,0,0,0);
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
         const diffDays = Math.ceil((rDate - today) / (1000 * 60 * 60 * 24));
         let badge = '';
         if (diffDays === 0) badge = '<div class="reminder-badge badge-danger">Hoy</div>';
         else if (diffDays < 0) badge = '<div class="reminder-badge badge-danger">Vencido</div>';
         else badge = `<div class="reminder-badge badge-muted">${diffDays} día${diffDays > 1 ? 's' : ''}</div>`;
+<<<<<<< HEAD
         const dateObj = new Date(r.date);
         html += `<div class="reminder-item"><div class="reminder-date"><div class="reminder-day">${dateObj.getDate()}</div><div class="reminder-month">${dateObj.toLocaleString('es',{month:'short'})}</div></div><div class="reminder-info"><div class="reminder-title">${r.title}</div><div class="reminder-detail">$${r.amount.toFixed(2)} · ${r.time}</div></div>${badge}</div>`;
+=======
+
+        const dateObj = new Date(r.date);
+        html += `
+          <div class="reminder-item">
+            <div class="reminder-date">
+              <div class="reminder-day">${dateObj.getDate()}</div>
+              <div class="reminder-month">${dateObj.toLocaleString('es', {month:'short'})}</div>
+            </div>
+            <div class="reminder-info">
+              <div class="reminder-title">${r.title}</div>
+              <div class="reminder-detail">$${r.amount.toFixed(2)} · ${r.time}</div>
+            </div>
+            ${badge}
+          </div>`;
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       });
       document.getElementById('remindersList').innerHTML = html;
     }
@@ -1677,15 +2020,33 @@
         'Entretenimiento': '🎬', 'Salud': '💊', 'Educación': '📚', 'Otros': '📦',
         'Salario': '💰', 'Freelance': '💻'
       };
+<<<<<<< HEAD
+=======
+
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       sorted.slice(0, 8).forEach(t => {
         const icon = icons[t.category] || icons[t.desc] || (t.type === 'income' ? '💰' : '📦');
         const amountClass = t.type === 'income' ? 'tx-income' : 'tx-expense';
         const sign = t.type === 'income' ? '+' : '-';
+<<<<<<< HEAD
         html += `<div class="transaction-item"><div class="tx-icon" style="background: ${t.type === 'income' ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)'};">${icon}</div><div class="tx-info"><div class="tx-title">${t.desc}</div><div class="tx-date">${t.category} · ${new Date(t.date).toLocaleDateString('es')}</div></div><div class="tx-amount ${amountClass}">${sign}$${t.amount.toFixed(2)}</div><button class="delete-btn" onclick="deleteTransaction(${t.id})">🗑️</button></div>`;
+=======
+        html += `
+          <div class="transaction-item">
+            <div class="tx-icon" style="background: ${t.type === 'income' ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)'};">${icon}</div>
+            <div class="tx-info">
+              <div class="tx-title">${t.desc}</div>
+              <div class="tx-date">${t.category} · ${new Date(t.date).toLocaleDateString('es')}</div>
+            </div>
+            <div class="tx-amount ${amountClass}">${sign}$${t.amount.toFixed(2)}</div>
+            <button class="delete-btn" onclick="deleteTransaction(${t.id})">🗑️</button>
+          </div>`;
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       });
       document.getElementById('transactionsList').innerHTML = html;
     }
 
+<<<<<<< HEAD
     // ===== GROWTH SCREEN =====
     function renderGrowth() {
       const income = transactions.filter(t => t.type === 'income').reduce((s, t) => s + t.amount, 0);
@@ -1793,6 +2154,22 @@
     }
 
     function closeTxModal() { document.getElementById('txModalOverlay').classList.remove('active'); }
+=======
+    // ===== MODAL =====
+    function openModal(type) {
+      currentModalType = type;
+      document.getElementById('modalTitle').textContent = type === 'expense' ? 'Nuevo gasto' : 'Nuevo ingreso';
+      document.getElementById('categoryGroup').style.display = type === 'expense' ? 'block' : 'none';
+      document.getElementById('modalOverlay').classList.add('active');
+      document.getElementById('txDesc').value = '';
+      document.getElementById('txAmount').value = '';
+      document.getElementById('txDesc').focus();
+    }
+
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('active');
+    }
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
 
     function saveTransaction() {
       const desc = document.getElementById('txDesc').value.trim();
@@ -1800,17 +2177,35 @@
       const category = document.getElementById('txCategory').value;
       const date = document.getElementById('txDate').value;
 
+<<<<<<< HEAD
       if (!desc || isNaN(amount) || amount <= 0 || !date) { showToast('Completa todos los campos'); return; }
+=======
+      if (!desc || isNaN(amount) || amount <= 0 || !date) {
+        showToast('Completa todos los campos');
+        return;
+      }
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
 
       transactions.push({
         id: nextId++,
         type: currentModalType,
+<<<<<<< HEAD
         desc, amount, date,
         category: currentModalType === 'expense' ? category : 'Ingreso'
       });
       saveUserData();
       logActivity(currentModalType === 'expense' ? 'Nuevo gasto registrado' : 'Nuevo ingreso registrado');
       closeTxModal();
+=======
+        desc,
+        amount,
+        date,
+        category: currentModalType === 'expense' ? category : 'Ingreso'
+      });
+
+      localStorage.setItem('fintrack_transactions', JSON.stringify(transactions));
+      closeModal();
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       renderAll();
       showToast(currentModalType === 'expense' ? 'Gasto guardado ✅' : 'Ingreso guardado ✅');
     }
@@ -1818,12 +2213,17 @@
     function deleteTransaction(id) {
       if (!confirm('¿Eliminar esta transacción?')) return;
       transactions = transactions.filter(t => t.id !== id);
+<<<<<<< HEAD
       saveUserData();
       logActivity('Transacción eliminada');
+=======
+      localStorage.setItem('fintrack_transactions', JSON.stringify(transactions));
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
       renderAll();
       showToast('Transacción eliminada');
     }
 
+<<<<<<< HEAD
     function openGoalModal() {
       document.getElementById('goalModalOverlay').classList.add('active');
       document.getElementById('goalName').value = '';
@@ -2029,6 +2429,8 @@
       });
     }
 
+=======
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
     // ===== TOAST =====
     function showToast(msg) {
       const toast = document.getElementById('toast');
@@ -2037,6 +2439,7 @@
       setTimeout(() => toast.classList.remove('show'), 2500);
     }
 
+<<<<<<< HEAD
     // ===== INIT =====
     document.addEventListener('DOMContentLoaded', () => {
       const savedUser = localStorage.getItem('ecubodget_currentUser');
@@ -2059,3 +2462,46 @@
   </script>
 </body>
 </html>
+=======
+    // ===== REMINDER ALERTS =====
+    function checkReminders() {
+      const now = new Date();
+      const today = now.toISOString().split('T')[0];
+      const currentTime = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+
+      reminders.forEach(r => {
+        if (r.date === today && r.time === currentTime) {
+          showToast(`⏰ Recordatorio: ${r.title} - $${r.amount}`);
+        }
+      });
+    }
+
+    // ===== NAV TABS =====
+    function switchTab(tab) {
+      document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+
+      if (tab === 'analysis') {
+        showToast('Análisis cargado');
+      } else if (tab === 'growth') {
+        showToast('Proyección de crecimiento (próximamente)');
+      } else if (tab === 'security') {
+        showToast('Configuración de seguridad (próximamente)');
+      } else if (tab === 'settings') {
+        showToast('Ajustes (próximamente)');
+      }
+    }
+
+    // Close modal on overlay click
+    document.getElementById('modalOverlay').addEventListener('click', (e) => {
+      if (e.target === document.getElementById('modalOverlay')) closeModal();
+    });
+
+    // Enter key in modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
+>>>>>>> 817afb19a8cd20700ea3efccb7cd25b0bd22f834
